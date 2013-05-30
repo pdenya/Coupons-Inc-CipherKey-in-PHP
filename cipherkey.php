@@ -2,7 +2,7 @@
 function EncodeCPT($pinCode, $offerCode, $shortKey, $longKey){
 	$decodeX = " abcdefghijklmnopqrstuvwxyz0123456789!$%()*+,-.@;<=>?[]^_{|}~";
 	
-	if(strlen($offerCode) == 5) {
+	if(strlen($offerCode) > 4) {
 		$ocode = $offerCode % 10000;
 	} else {
 		$ocode = $offerCode;
